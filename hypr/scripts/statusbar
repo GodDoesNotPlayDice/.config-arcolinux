@@ -1,7 +1,7 @@
 #!/bin/bash
 
-CONFIG="$HOME/.config/waybar/config.jsonc"
-STYLE="$HOME/.config/waybar/style.css"
+CONFIG="$HOME/.config/hypr/waybar/config.jsonc"
+STYLE="$HOME/.config/hypr/waybar/style.css"
 
 # Terminate already running bar instances
 killall -q waybar
@@ -10,5 +10,7 @@ killall -q waybar
 while pgrep -x waybar >/dev/null; do sleep 1; done
 
 if [[ ! $(pidof waybar) ]]; then
+	chmod 644 $HOME/.config/hypr/waybar/config.jsonc
+	chmod 644 $HOME/.config/hypr/waybar/style.css
 	waybar --bar main-bar --log-level error --config ${CONFIG} --style ${STYLE}
 fi
