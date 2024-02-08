@@ -8,7 +8,7 @@
   "margin-right": 0,
   "modules-left": ["hyprland/workspaces", "custom/playerlabel"],
   "modules-center": ["cpu", "memory", "disk"],
-  "modules-right": ["tray", "keyboard-state",  "custom/pacman", "network", "pulseaudio", "battery", "clock"],
+  "modules-right": ["tray",  "custom/pacman", "network", "pulseaudio", "battery", "clock"],
 "clock": {
   "format": " {:%H:%M}",
   "tooltip": "true",
@@ -17,14 +17,13 @@
 },
 
 "keyboard-state": {
-  "capslock": true,
-  "format": {
-      "capslock": "{icon}"                                                                                                                                                       
-  },
-  "format-icons": {
-      "locked": "LOCK",
-      "unlocked": ""
-  }
+	"numlock": true,
+	"capslock": true,
+	"format": "{name} {icon}",
+	"format-icons": {
+		"locked": "",
+		"unlocked": ""
+	}
 },
 
 
