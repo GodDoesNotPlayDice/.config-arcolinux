@@ -37,7 +37,7 @@ sudo snap install postman
 sudo pacman -S octopi
 sudo pacman -S qt5-wayland
 ```
-example apps: ulauncher, obsidian, discord, chrome
+example apps: ulauncher, obsidian, discord, chrome, dunst
 
 ### Yay packages
 ```sh
@@ -91,5 +91,4 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 nvm install --lts
 ```
 
-
-
+### Finally you can clone this repo and replace the .config
