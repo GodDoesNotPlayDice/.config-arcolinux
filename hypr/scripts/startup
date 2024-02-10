@@ -22,11 +22,19 @@ fi
 # Apply themes
 ${SCRIPTSDIR}/gtkthemes &
 
+# Lauch notification daemon (mako)
+${SCRIPTSDIR}/notifications &
+
 # Lauch statusbar (waybar)
-${SCRIPTSDIR}/statusbar &
+# ${SCRIPTSDIR}/statusbar &
 
 # Xauthority
 ${SCRIPTSDIR}/xauthority &
+
+${SCRIPTSDIR}
+
+
+
 
 dex $HOME/.config/autostart/arcolinux-welcome-app.desktop &
 
