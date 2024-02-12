@@ -37,7 +37,9 @@ sudo snap install postman
 sudo pacman -S octopi
 sudo pacman -S qt5-wayland
 ```
-example apps: ulauncher, obsidian, discord, chrome, dunst
+#### apps:
+ulauncher, obsidian, discord, chrome, ttf-firacode-nerd,
+brightnessctl, virtualbox, virt-manager
 
 ### Yay packages
 ```sh
@@ -62,26 +64,25 @@ eval "$(starship init zsh)"
 
 ### ZSH plugins
 
-1. Clone this repository into /usr/share/oh-my-zsh/
-    ```sh
-    cd /usr/share/oh-my-zsh/
-    ```
+Clone this repository into /usr/share/oh-my-zsh/custom/plugins
 
-    ```sh
-    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-    ```
+```sh
+cd /usr/share/oh-my-zsh/custom/plugins/
+```
+    
+```sh
+git clone https://github.com/zsh-users/zsh-autosuggestions
+```
 
-2. Add the plugin to the list of plugins for Oh My Zsh to load (inside `~/.zshrc`):
+Add the plugin to the list of plugins for Oh My Zsh to load (inside `~/.zshrc`):
+```sh
+plugins=( 
+    git
+    zsh-autosuggestions
+)
+```
 
-    ```sh
-    plugins=( 
-        git
-        zsh-autosuggestions
-    )
-    ```
-
-3. Start a new terminal session.
-
+Start a new terminal session.
 
 ### Install NodeJS, nvm
 https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script
