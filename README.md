@@ -101,7 +101,7 @@ mkdir ~/Documents/GitHub/
 cd ~/Documents/GitHub/
 git clone https://github.com/GodDoesNotPlayDice/.config-arcolinux.git
 sudo chmod +x setup.sh
-./setup
+./setup.sh
 
 
 
