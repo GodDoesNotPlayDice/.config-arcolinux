@@ -44,5 +44,10 @@ sudo ln -s /var/lib/snapd/snap /snap
 rm -rf ~/.config/hypr/
 cp -rf "$GITHUB_DIR/.config-arcolinux/" ~/.config/
 
-# Reiniciar el sistema
-sudo reboot
+# Preguntar al usuario antes de reiniciar
+read -p "Todos los pasos se completaron correctamente. ¿Desea reiniciar el sistema ahora? (Y/N): " confirmacion
+if [[ "$confirmacion" == [yY] || "$confirmacion" == [yY][eE][sS] ]]; then
+    sudo reboot
+else
+    echo "No se reiniciará el sistema."
+fi
