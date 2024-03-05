@@ -103,9 +103,4 @@ git clone https://github.com/GodDoesNotPlayDice/.config-arcolinux.git
 cd .config-arcolinux/
 sudo chmod +x setup.sh
 ./setup.sh
-
-
-
-
-
 ```
