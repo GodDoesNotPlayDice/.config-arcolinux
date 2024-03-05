@@ -100,6 +100,7 @@ nvm install --lts
 mkdir ~/Documents/GitHub/
 cd ~/Documents/GitHub/
 git clone https://github.com/GodDoesNotPlayDice/.config-arcolinux.git
+cd .config-arcolinux/
 sudo chmod +x setup.sh
 ./setup.sh
 
