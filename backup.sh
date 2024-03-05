@@ -40,7 +40,7 @@ cp -r ~/.config/ulauncher/ ~/Documents/GitHub/.config-arcolinux
 check_result "Failed to backup ulauncher/"
 
 # MD
-cp -r ~/Documents/config.md/README.md ~/Documents/GitHub/.config-arcolinux
+cp -r ~/.config/README.md ~/Documents/GitHub/.config-arcolinux
 check_result "Failed to backup config.md/README.md"
 
 echo "All files backed up successfully."

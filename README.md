@@ -93,3 +93,18 @@ nvm install --lts
 ```
 
 ### Finally you can clone this repo and replace the .config
+
+## New, use setup script.
+
+```sh
+mkdir ~/Documents/GitHub/
+cd ~/Documents/GitHub/
+git clone https://github.com/GodDoesNotPlayDice/.config-arcolinux.git
+sudo chmod +x setup.sh
+./setup
+
+
+
+
+
+```
