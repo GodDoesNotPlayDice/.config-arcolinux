@@ -60,5 +60,5 @@ sudo snap install gitkraken --classic
 sudo snap install postman
 ```
 
-*Replace into .config (hypr, gtk-3.0, ulauncher, waybar) in the $HOME replace .zshrc*
+*Replace into .config (hypr, gtk-3.0, ulauncher, waybar, alacritty) in the $HOME replace .zshrc*
 
