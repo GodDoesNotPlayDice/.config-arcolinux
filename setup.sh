@@ -16,20 +16,14 @@ curl -sS https://starship.rs/install.sh | sudo sh
 
 # Instalar plugins de Zsh
 cd /usr/share/oh-my-zsh/custom/plugins/
-# sudo git clone https://github.com/lukechilds/zsh-nvm
+sudo git clone https://github.com/lukechilds/zsh-nvm
 sudo git clone https://github.com/zsh-users/zsh-autosuggestions
-
-# Configurar Zsh
-sed -i '/^ZSH_THEME="random"$/d' ~/.zshrc
-sed -i '/^plugins=(git)$/d' ~/.zshrc
-echo 'eval "$(starship init zsh)"' >> ~/.zshrc
-echo 'plugins=(git zsh-autosuggestions)' >> ~/.zshrc
 
 # Instalar Node.js y NVM
 sudo pacman -S nodejs npm --noconfirm
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
-echo 'export NVM_DIR=~/.nvm' >> ~/.zshrc
-echo '[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"' >> ~/.zshrc
+# wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+# echo 'export NVM_DIR=~/.nvm' >> ~/.zshrc
+# echo '[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"' >> ~/.zshrc
 
 # Instalar Snapd
 cd "$DOWNLOADS_DIR"
