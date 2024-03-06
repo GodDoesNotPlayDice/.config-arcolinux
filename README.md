@@ -1,4 +1,4 @@
-# Hi, This is my arcolinux hyprland dots.
+# Arcolinux hyprland dots.
 
 ## Automatic
 
@@ -61,4 +61,9 @@ sudo snap install postman
 ```
 
 *Replace into .config (hypr, gtk-3.0, ulauncher, waybar, alacritty) in the $HOME replace .zshrc*
+
+
+![image](https://github.com/GodDoesNotPlayDice/.config-arcolinux/assets/104604407/cf221090-6d48-4c27-9324-4b02f997b54a)
+
+
 
