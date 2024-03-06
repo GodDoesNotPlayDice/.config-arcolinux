@@ -21,15 +21,13 @@ sudo git clone https://github.com/lukechilds/zsh-nvm
 sudo git clone https://github.com/zsh-users/zsh-autosuggestions
 
 # Configurar Zsh
+sed -i '/^ZSH_THEME="random"$/d' ~/.zshrc
 echo 'eval "$(starship init zsh)"' >> ~/.zshrc
 echo 'plugins=(git zsh-autosuggestions zsh-nvm)' >> ~/.zshrc
-sed -i '/^ZSH_THEME="random"$/d' ~/.zshrc
+
 
 # Instalar Node.js y NVM
 sudo pacman -S nodejs npm --noconfirm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-source ~/.zshrc  # Cargar configuración de Zsh
-nvm install --lts
 
 # Instalar Snapd
 cd "$DOWNLOADS_DIR"
@@ -42,7 +40,7 @@ sudo ln -s /var/lib/snapd/snap /snap
 
 # Copiar configuraciones
 rm -rf ~/.config/hypr/
-cp -rf "$GITHUB_DIR/.config-arcolinux/" ~/.config/
+cp -rf "$GITHUB_DIR/.config-arcolinux/*" ~/.config/
 
 # Preguntar al usuario antes de reiniciar
 read -p "Todos los pasos se completaron correctamente. ¿Desea reiniciar el sistema ahora? (Y/N): " confirmacion
