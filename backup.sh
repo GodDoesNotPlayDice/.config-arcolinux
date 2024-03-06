@@ -39,6 +39,13 @@ check_result "Failed to backup neofetch/"
 cp -r ~/.config/ulauncher/ ~/Documents/GitHub/.config-arcolinux
 check_result "Failed to backup ulauncher/"
 
+cp -rf ~/.zshrc ~/Documents/GitHub/.config-arcolinux
+check_result "Failed to backup .zshrc file"
+
+cp -rf ~/.config/gtk-3.0/ ~/Documents/GitHub/.config-arcolinux
+check_result "Failed to backup gtk-3.0" 
+
+
 # MD
 cp -r ~/.config/README.md ~/Documents/GitHub/.config-arcolinux
 check_result "Failed to backup config.md/README.md"
