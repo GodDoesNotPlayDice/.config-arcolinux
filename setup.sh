@@ -16,14 +16,14 @@ curl -sS https://starship.rs/install.sh | sudo sh
 
 # Instalar plugins de Zsh
 cd /usr/share/oh-my-zsh/custom/plugins/
-sudo git clone https://github.com/lukechilds/zsh-nvm
+# sudo git clone https://github.com/lukechilds/zsh-nvm
 sudo git clone https://github.com/zsh-users/zsh-autosuggestions
 
 # Configurar Zsh
 sed -i '/^ZSH_THEME="random"$/d' ~/.zshrc
 sed -i '/^plugins=(git)$/d' ~/.zshrc
 echo 'eval "$(starship init zsh)"' >> ~/.zshrc
-echo 'plugins=(git zsh-autosuggestions zsh-nvm)' >> ~/.zshrc
+echo 'plugins=(git zsh-autosuggestions)' >> ~/.zshrc
 
 # Instalar Node.js y NVM
 sudo pacman -S nodejs npm --noconfirm
