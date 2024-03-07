@@ -1,4 +1,5 @@
 # Arcolinux hyprland dots.
+*arcolinuxb-hyprland-v24.02.04-x86_64.iso*
 
 ## Automatic
 
