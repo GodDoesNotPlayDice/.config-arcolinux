@@ -45,6 +45,13 @@ check_result "Failed to backup .zshrc file"
 cp -rf ~/.config/gtk-3.0/ ~/Documents/GitHub/.config-arcolinux
 check_result "Failed to backup gtk-3.0" 
 
+cp -rf ~/.config/setup.sh ~/Documents/GitHub/.config-arcolinux
+check_result "Failed setup.sh"
+
+cp -rf ~/.config/backup.sh ~/Documents/GitHub/.config-arcolinux
+check_result "Failed backup.sh"
+
+
 
 # MD
 cp -r ~/.config/README.md ~/Documents/GitHub/.config-arcolinux
