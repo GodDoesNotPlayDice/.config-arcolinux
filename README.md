@@ -23,7 +23,7 @@ sudo pacman -Syu
 
 ### Install pacman packages
 ```sh
-sudo pacman -S squashfs-tools qt5-wayland octopi ulauncher obsidian discord ttf-firacode-nerd brightnessctl github-desktop-bin github-cli dracula-cursors-git nodejs npm snapd snapd-glib nomachine
+sudo pacman -S squashfs-tools qt5-wayland octopi ulauncher obsidian discord ttf-firacode-nerd brightnessctl github-desktop-bin github-cli dracula-cursors-git nodejs npm snapd snapd-glib nomachine google-chrome
 ```
 
 ### Yay packages
