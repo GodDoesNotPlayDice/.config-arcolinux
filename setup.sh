@@ -12,8 +12,8 @@ yay -S ttf-jetbrains-mono-nerd dracula-gtk-theme-git dracula-icons-git swappy sn
 
 echo "Cambiando la waybar por error en la waybar de yay"
 echo "Error => waybar: error while loading shared libraries: libwireplumber-0.4.so.0: cannot open shared object file: No such file or directory"
-#sudo pacman -R waybar-git
-#sudo pacman -S waybar
+sudo yay -R waybar-hyprland-git
+sudo pacman -S waybar
 
 echo "Instalando Starship..."
 curl -sS https://starship.rs/install.sh | sudo sh
