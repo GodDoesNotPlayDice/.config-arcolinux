@@ -6,9 +6,9 @@ echo "Actualizando e instalando paquetes..."
 sudo pacman -Syu --noconfirm
 sudo yay -Syu --noconfirm
 
-sudo pacman -S squashfs-tools qt5-wayland octopi ulauncher obsidian discord ttf-firacode-nerd brightnessctl github-desktop-bin github-cli dracula-cursors-git nodejs npm snapd snapd-glib nomachine libreoffice-still-es google-chrome --noconfirm
+sudo pacman -S squashfs-tools qt5-wayland octopi ulauncher obsidian discord ttf-firacode-nerd brightnessctl github-desktop-bin github-cli dracula-cursors-git nodejs npm snapd snapd-glib nomachine libreoffice-still-es google-chrome gitkraken --noconfirm
 
-yay -S ttf-jetbrains-mono-nerd dracula-gtk-theme-git dracula-icons-git swappy snapd --noconfirm
+yay -S ttf-jetbrains-mono-nerd dracula-gtk-theme-git dracula-icons-git swappy snapd postman-bin visual-studio-code-bin --noconfirm
 
 echo "Cambiando la waybar por error en la waybar de yay"
 echo "Error => waybar: error while loading shared libraries: libwireplumber-0.4.so.0: cannot open shared object file: No such file or directory"
