@@ -23,12 +23,12 @@ sudo pacman -Syu
 
 ### Install pacman packages
 ```sh
-sudo pacman -S squashfs-tools qt5-wayland octopi ulauncher obsidian discord ttf-firacode-nerd brightnessctl github-desktop-bin github-cli dracula-cursors-git nodejs npm snapd snapd-glib nomachine google-chrome
+sudo pacman -S squashfs-tools qt5-wayland octopi ulauncher obsidian discord ttf-firacode-nerd brightnessctl github-desktop-bin github-cli dracula-cursors-git nodejs npm snapd snapd-glib nomachine libreoffice-still-es google-chrome gitkraken
 ```
 
 ### Yay packages
 ```sh
-yay -S ttf-jetbrains-mono-nerd dracula-gtk-theme-git dracula-icons-git swappy snapd
+yay -S ttf-jetbrains-mono-nerd dracula-gtk-theme-git dracula-icons-git swappy snapd postman-bin visual-studio-code-bin
 ```
 
 ### Starship
@@ -59,6 +59,18 @@ sudo ln -s /var/lib/snapd/snap /snap
 sudo snap install code --classic
 sudo snap install gitkraken --classic
 sudo snap install postman
+```
+### Fix the waybar package
+```sh
+sudo yay -R waybar-hyprland-git
+sudo pacman -S waybar
+```
+### Replace files
+```sh
+sudo rm -rf ~/.config/hypr/
+sudo rm -rf ~/.zshrc
+sudo cp -rf ~/Documents/GitHub/.config-arcolinux/.zshrc ~/
+sudo cp -rf ~/Documents/GitHub/.config-arcolinux/* ~/.config/
 ```
 
 *Replace into .config (hypr, gtk-3.0, ulauncher, waybar, alacritty) in the $HOME replace .zshrc*
