@@ -55,7 +55,10 @@ sudo git clone https://github.com/lukechilds/zsh-nvm
 ```sh
 sudo systemctl enable --now snapd.socket
 sudo ln -s /var/lib/snapd/snap /snap
-
+```
+this is optional if you wanna install this packages by snap or by yay or pacman
+you should remove gitkraken, postman-bin, visual-studio-code-bin from yay and pacman if you install this.
+```sh
 sudo snap install code --classic
 sudo snap install gitkraken --classic
 sudo snap install postman
